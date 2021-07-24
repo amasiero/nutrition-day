@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NutritionDay | Agenda da Nutricionista</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="assets/styles/reset.css" />
+		<link rel="stylesheet" href="assets/styles/global.css" />
+	</head>
+	<body>
+		<header class="header">
+			<img
+				src="assets/img/logo.svg"
+				alt="Logo da NutritionDay"
+				title="NutritionDay, a agenda da nutricionista"
+				class="header__logo"
+			/>
+		</header>
+		<main class="main">
+			<table class="main__table">
+				<thead class="table__header">
+					<tr>
+						<th>Nome</th>
+						<th>Data</th>
+						<th>Peso (kg)</th>
+						<th>Altura (m)</th>
+						<th>IMC</th>
+					</tr>
+				</thead>
+				<tbody class="table__data">
+					<tr class="table__data-row">
+						<td class="table__data-name">Andrey Masiero</td>
+						<td class="table__data-date">18/07/2021</td>
+						<td class="table__data-weight">86</td>
+						<td class="table__data-height">1.83</td>
+						<td class="table__data-imc">25.68</td>
+					</tr>
+					<tr class="table__data-row">
+						<td class="table__data-name">Gloria Maria</td>
+						<td class="table__data-date">18/07/2021</td>
+						<td class="table__data-weight">45</td>
+						<td class="table__data-height">1.63</td>
+						<td class="table__data-imc">16.93</td>
+					</tr>
+					<tr class="table__data-row">
+						<td class="table__data-name">Joana D´arc</td>
+						<td class="table__data-date">19/07/2021</td>
+						<td class="table__data-weight">53</td>
+						<td class="table__data-height">1.70</td>
+						<td class="table__data-imc">18.33</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="main__btn-container">
+				<a href="#" class="main__btn"
+					><div class="hbar"></div>
+					<div class="vbar"></div
+				></a>
+			</div>
+		</main>
+		<div class="modal">
+			<div class="modal__content">
+				<h1 class="modal__title">Adicionar Paciente</h1>
+				<div class="modal__field">
+					<input
+						type="text"
+						id="fullname"
+						name="fullname"
+						class="field__input"
+						placeholder="Ex: Andrey Masiero"
+					/>
+					<label for="fullname" class="field__label">Nome completo</label>
+				</div>
+				<div class="modal__field">
+					<input
+						type="date"
+						id="date"
+						name="date"
+						class="field__input"
+						placeholder="Ex: 07/29/2021"
+					/>
+					<!-- <label for="date" class="field__label">Data do atendimento</label> -->
+				</div>
+				<div class="modal__field">
+					<input
+						type="number"
+						id="weight"
+						name="weight"
+						step="0.1"
+						max="300"
+						class="field__input"
+						placeholder="Ex: 86.5"
+					/>
+					<label for="weight" class="field__label">Peso atual</label>
+				</div>
+				<div class="modal__field">
+					<input
+						type="number"
+						id="height"
+						id="height"
+						step="0.01"
+						max="3"
+						class="field__input"
+						placeholder="Ex: 1.83"
+					/>
+					<label for="height" class="field__label">Altura</label>
+				</div>
+				<div class="modal__btn-container">
+					<button class="modal__btn--cancel modal__btn">Cancelar</button>
+					<button class="modal__btn--confirm modal__btn">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
